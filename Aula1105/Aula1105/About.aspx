@@ -5,11 +5,16 @@
     <h3>Your application description page.</h3>
 
     <p>Use this area to provide additional information.</p>
-    <br />
-    <asp:Calendar id="CalDATAiNICIO"  runat="server"  ></asp:Calendar>
-    <br />
-    <br />
-    <asp:TextBox ID="txtData" runat="server"  ></asp:TextBox>
-    <asp:Button ID="btnSalvar" CssClass="btn btn-primary" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
+    <div>
+        <asp:TextBox ID="txtValor1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtValor2" runat="server"></asp:TextBox>
+    </div>
+    <div>
+         <asp:TextBox ID="txtResultado" runat="server"></asp:TextBox>
+         <asp:Button ID="Button1" runat="server" Text="+" OnClick="Button1_Click" />
+         <asp:Button ID="Button2" runat="server" Text="=" OnClick="Button2_Click" />
 
+    </div>
+   
+    
 </asp:Content>
